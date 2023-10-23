@@ -22,8 +22,10 @@ Una vez instalada y arrancada la aplicación, para poder probarla podemos usar a
 
 ## Funciones de la API
 
-* *vehicles_lists*: `GET` -> /api/vehicles -> ningún parámetro ni por GET ni POST -> Devuelve el listado completo de vehículos que aún no se hayan vendido (sold = false).
-* *vehicle_detail*: `GET` -> /api/vehicles/{id} -> `id`: id del vehículo que se desea visitar / sin parámetros POST -> Devuelve los datos del vehículo específicado por id.
-* *vehicle_create*: `POST` -> /api/vehicles -> Sin parámetros GET / `plate` (matrícula), `model` (modelo de coche), `brand` (marca), `color`, `image_path` (url de la imagen), `price` (precio) -> Crea un nuevo vehículo con los parámetros facilitados por POST.
-* *vehicle_reregister*: `PUT` -> /api/vehicles/plate/{id} -> `id`: id del vehículo que se desea rematricular / `plate`: nueva matrícula para el vehículo -> Modifica la matrícula actual del vehículo especificado por id.
-* *sell_vehicle*: `PUT` -> /api/vehicles/sell/{id} -> `id`: id del vehículo que se desea vender / sin parámetros POST -> Marca como vendido el vehículo especificado por id.
+| Función | Método | Dirección | Parámetros GET | Parámetros POST | Descripción |
+| --- | --- | --- | --- | --- | --- |
+| **vehicles_lists** | `GET` | /api/vehicles | Ninguno | Ninguno | Devuelve el listado completo de vehículos que aún no se hayan vendido (sold = false). |
+| **vehicle_detail** | `GET` | /api/vehicles/{id} | `id`: id del vehículo que se desea visitar. | Ninguno | Devuelve los datos del vehículo específicado por id. |
+| **vehicle_create** | `POST` | /api/vehicles | Ninguno | `plate` (matrícula), `model` (modelo de coche), `brand` (marca), `color`, `image_path` (url de la imagen) y `price` (precio) | Crea un nuevo vehículo con los parámetros facilitados por POST. |
+| **vehicle_reregister** | `PUT` | /api/vehicles/plate/{id} | `id`: id del vehículo que se desea rematricular. | `plate`: nueva matrícula para el vehículo. | Modifica la matrícula actual del vehículo especificado por id. |
+| **sell_vehicle** | `PUT` | /api/vehicles/sell/{id} | `id`: id del vehículo que se desea vender. | Ninguno | Marca como vendido el vehículo especificado por id. |
