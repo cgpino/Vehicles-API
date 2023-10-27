@@ -18,7 +18,7 @@ API básica desarrollada con PHP Symfony que permite realizar distintas operacio
 * Arrancar el servidor de la aplicación API, ejecutando el comando el comando `php bin/console server:run` en la raíz del proyecto, con ello tendremos la aplicación corriendo en `http://127.0.0.1:8000`.
 
 ## ¿Cómo se usa?
-Una vez instalada y arrancada la aplicación, para poder probarla podemos usar algún servicio que permita realizar peticiones *GET*, *POST*, *PUT* y *DELETE* a una dirección IP, como por ejemplo Postman o Insomnia.
+Una vez instalada y arrancada la aplicación, para poder probarla podemos usar algún servicio que permita realizar peticiones *GET*, *POST*, *PUT* y *DELETE* a una dirección, como por ejemplo Postman o Insomnia.
 
 ## Funciones de la API
 
